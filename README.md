@@ -1,3 +1,6 @@
+ HEAD
+# edited line 1 to “Version B”
+
 # mlops-iris-classifier — Version A
 # MLOps Iris Classifier
 
@@ -10,3 +13,4 @@ pip install -r requirements.txt
 python src/train.py
 \`\`\`
 
+ conflict-demo-a
