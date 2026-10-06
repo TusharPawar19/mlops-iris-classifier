@@ -1,4 +1,4 @@
-# mlops-iris-classifier — Version A
+# edited line 1 to “Version B”
 # MLOps Iris Classifier
 
 A sample ML project used to demonstrate Git-based version control
