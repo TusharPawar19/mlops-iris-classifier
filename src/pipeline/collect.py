@@ -12,6 +12,7 @@ from sklearn.datasets import load_iris
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("collect")
 
+
 def collect_data(output_path: str) -> pd.DataFrame:
     iris = load_iris(as_frame=True)
     df = iris.frame.rename(columns={"target": "species"})
@@ -20,6 +21,7 @@ def collect_data(output_path: str) -> pd.DataFrame:
     df.to_csv(output_path, index=False)
     logger.info("Collected %d rows -> %s", len(df), output_path)
     return df
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

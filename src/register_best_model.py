@@ -12,7 +12,7 @@ client = MlflowClient()
 # Locate experiment
 experiment = client.get_experiment_by_name("iris-classification-baseline")
 if not experiment:
-  raise RuntimeError("Experiment 'iris-classification-baseline' not found.")
+    raise RuntimeError("Experiment 'iris-classification-baseline' not found.")
 
 # Fetch best run based on macro F1 score
 runs = client.search_runs(
