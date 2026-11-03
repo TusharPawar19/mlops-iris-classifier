@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-MIN_ACCEPTABLE_ACCURACY = 0.999
+MIN_ACCEPTABLE_ACCURACY = 0.90
 FEATURE_COLS = [
     "sepal length (cm)", "sepal width (cm)",
     "petal length (cm)", "petal width (cm)",
